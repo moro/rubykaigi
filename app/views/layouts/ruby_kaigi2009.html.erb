@@ -1,3 +1,4 @@
+<%# coding: utf-8 -%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,7 +9,7 @@
   </head>
   <body>
 
-	<% if I18n.locale == "ja" -%>
+	<% if RUBY_VERSION < "1.9" && I18n.locale == "ja" -%>
 	<div id="analog">&nbsp;</div>
 	<% end -%>
     <div id="container">
@@ -18,12 +19,16 @@
       </div>
       <div id="content">
 
-<%= yield %>
+<%= yield.force_encoding('UTF-8') %>
 
 <div style="text-align:right"><%= link_to t(:rubykaigi2009), "/2009/#{I18n.locale}" %></div>
       </div><!-- content -->
     </div><!-- container -->
 Feel free to contact us via e-mail to: 2009 at rubykaigi dot org.
+<div id="powerd_by">
+  <ul> Ruby <%= RUBY_VERSION %> </ul>
+  <ul> Rails <%= Rails::VERSION::STRING %> </ul>
+</div>
 
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
