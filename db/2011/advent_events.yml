@@ -118,3 +118,14 @@ trbmeetup:
   url: "http://www.tokyorubyistmeetup.org/"
   location: "Yoyogi Park"
   pub_date: '2011-06-13'
+
+railstokyo:
+  hosted_by_en: 'Rails Meeting Tokyo'
+  hosted_by_ja: 'Rails Meeting Tokyo'
+  name_en: 'Rails-Tokyo #63'
+  name_ja: 'Rails勉強会@東京 第63回'
+  dtstart: '2011-06-18 13:00'
+  dtend: '2011-06-18 18:00'
+  url: "http://wiki.fdiary.net/rails/?RailsMeetingTokyo-0063"
+  location: "Eiwa System Management,Inc. (Tokyo, Japan)"
+  pub_date: '2011-06-14'
